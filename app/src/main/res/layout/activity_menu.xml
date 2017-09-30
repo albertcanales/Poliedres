@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:textAlignment="center">
+
+
+        <ImageButton
+            android:id="@+id/prisma"
+            android:layout_height="140dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick="prisma"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/prisma" />
+
+        <ImageButton
+            android:id="@+id/piramide"
+            android:layout_height="140dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick="piramide"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/piramide" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/prisma"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/piramide"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <ImageButton
+            android:id="@+id/cilindre"
+            android:layout_height="140dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:onClick="cilindre"
+            app:srcCompat="@drawable/cilindre" />
+
+        <ImageButton
+            android:id="@+id/cono"
+            android:layout_height="140dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:onClick="cono"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/cono" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cilindre"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/con"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+    </TableRow>
+
+
+    <TableRow
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+
+        <ImageButton
+            android:id="@+id/esfera"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:onClick="esfera"
+            app:srcCompat="@drawable/esfera" />
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/esfera"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+    </TableRow>
+</TableLayout>

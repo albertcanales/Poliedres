@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Poliedres</string>
+    <string name="benvingut">Benvingut al nou POLIEDRES</string>
+    <string name="boto1">Comença!</string>
+    <string name="password">Contrasenya</string>
+    <string name="user_pass">El usuari és correcte!</string>
+    <string name="user_deny">El usuari no es correcte</string>
+    <string name="prisma">Prisma</string>
+    <string name="piramide">Piràmide</string>
+    <string name="cilindre">Cilindre</string>
+    <string name="con">Con</string>
+    <string name="esfera">Esfera</string>
+</resources>
