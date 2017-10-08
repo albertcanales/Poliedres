@@ -1,4 +1,4 @@
-package com.example.albertcanales.poliedres;
+package com.example.albertcanales.poliedres.utils;
 
 /**
  * Created by Albert Canales on 03/10/2017.

@@ -1,4 +1,4 @@
-package com.example.albertcanales.poliedres;
+package com.example.albertcanales.poliedres.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

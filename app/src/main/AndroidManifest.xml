@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/poliedres"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,21 +17,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MenuActivity"
+            android:name=".activities.MenuActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".PrismaPiramideActivity"
+            android:name=".activities.PrismaPiramideActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".CilindreActivity"
+            android:name=".activities.CilindreActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".EsferaActivity"
+            android:name=".activities.EsferaActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ConoActivity"
+            android:name=".activities.ConoActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".BaseActivity"></activity>
+        <activity android:name=".activities.BaseActivity"></activity>
     </application>
 
 </manifest>

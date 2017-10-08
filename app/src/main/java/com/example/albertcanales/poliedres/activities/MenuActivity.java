@@ -1,8 +1,10 @@
-package com.example.albertcanales.poliedres;
+package com.example.albertcanales.poliedres.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.albertcanales.poliedres.R;
 
 public class MenuActivity extends BaseActivity {
 

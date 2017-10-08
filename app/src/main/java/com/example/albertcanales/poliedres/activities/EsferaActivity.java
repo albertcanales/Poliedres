@@ -1,6 +1,8 @@
-package com.example.albertcanales.poliedres;
+package com.example.albertcanales.poliedres.activities;
 
 import android.os.Bundle;
+
+import com.example.albertcanales.poliedres.R;
 
 public class EsferaActivity extends BaseActivity {
 
