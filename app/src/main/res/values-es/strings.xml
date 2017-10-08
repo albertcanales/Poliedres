@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">Poliedres</string>
     <string name="benvingut">Benvingut al nou POLIEDRES</string>
     <string name="boto1">Comença!</string>
     <string name="password">Contrasenya</string>
@@ -15,7 +15,4 @@
     <string name="area_toast">Area = %s</string>
     <string name="volum_toast">Volum = %s</string>
     <string name="toast_minim_costats">Mínim 3 costats!</string>
-    <string name="error_longitud_costats">Falta la longitud del costat</string>
-    <string name="error_num_costats">Falta el numero de costats</string>
-    <string name="error_altura">Falta l\'altura</string>
 </resources>

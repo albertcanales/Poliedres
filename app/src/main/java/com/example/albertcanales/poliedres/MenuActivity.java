@@ -2,7 +2,6 @@ package com.example.albertcanales.poliedres;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 public class MenuActivity extends BaseActivity {
@@ -15,12 +14,14 @@ public class MenuActivity extends BaseActivity {
 
 
     public void prisma(View view) {
-        Intent intent = new Intent(this, PrismaActivity.class);
+        Intent intent = new Intent(this, PrismaPiramideActivity.class);
+        intent.putExtra(PrismaPiramideActivity.PRISMA_PIRAMIDE_KEY, PrismaPiramideActivity.PRISMA_KEY);
         startActivity(intent);
     }
 
     public void piramide(View view) {
-        Intent intent = new Intent(this, PiramideActivity.class);
+        Intent intent = new Intent(this, PrismaPiramideActivity.class);
+        intent.putExtra(PrismaPiramideActivity.PRISMA_PIRAMIDE_KEY, PrismaPiramideActivity.PIRAMIDE_KEY);
         startActivity(intent);
     }
 

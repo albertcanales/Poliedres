@@ -20,10 +20,7 @@
             android:name=".MenuActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".PrismaActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".PiramideActivity"
+            android:name=".PrismaPiramideActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".CilindreActivity"
