@@ -16,7 +16,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MenuActivity"
             android:screenOrientation="portrait" />
@@ -31,12 +30,11 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".EsferaActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ConoActivity"
-            android:screenOrientation="portrait" >
-
-        </activity>
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".BaseActivity"></activity>
     </application>
 
 </manifest>
