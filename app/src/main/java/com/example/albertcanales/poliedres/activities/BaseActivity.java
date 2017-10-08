@@ -1,25 +1,29 @@
 package com.example.albertcanales.poliedres.activities;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.albertcanales.poliedres.R;
+import com.example.albertcanales.poliedres.utils.CilindreFunctions;
+import com.example.albertcanales.poliedres.utils.ConFunctions;
+import com.example.albertcanales.poliedres.utils.EsferaFunctions;
 import com.example.albertcanales.poliedres.utils.PiramideFunctions;
+import com.example.albertcanales.poliedres.utils.PoliedresFunctions;
 import com.example.albertcanales.poliedres.utils.PrismaFunctions;
-import com.example.albertcanales.poliedres.utils.PrismaPiramideFunctions;
 
 public class BaseActivity extends AppCompatActivity {
-    public static String POLIEDRE_KEY = "poliedre_key";
-    public static String PRISMA_KEY = "prisma_key";
-    public static String PIRAMIDE_KEY = "piramide_key";
-    public static String CILINDRE_KEY = "cilindre_key";
-    public static String CON_KEY = "con_key";
+    public static final String POLIEDRE_KEY = "poliedre_key";
+    public static final String PRISMA_KEY = "prisma_key";
+    public static final String PIRAMIDE_KEY = "piramide_key";
+    public static final String CILINDRE_KEY = "cilindre_key";
+    public static final String CON_KEY = "con_key";
+    public static final String ESFERA_KEY = "esfera_key";
 
-    protected PrismaPiramideFunctions poliedreFunctions;
+    protected PoliedresFunctions poliedreFunctions;
     protected float altura;
     protected float radi;
     protected float longitudCostat;
@@ -33,19 +37,27 @@ public class BaseActivity extends AppCompatActivity {
     }
 
     protected void check() {
-        String stringExtra = getIntent().getStringExtra(POLIEDRE_KEY);
-        if (stringExtra.equals(PRISMA_KEY)) {
-            ((ImageView) findViewById(R.id.imatge)).setImageResource(R.drawable.prisma);
-            poliedreFunctions = new PrismaFunctions();
-        } else if (stringExtra.equals(PIRAMIDE_KEY)) {
-            ((ImageView) findViewById(R.id.imatge)).setImageResource(R.drawable.piramide);
-            poliedreFunctions = new PiramideFunctions();
-        } else if (stringExtra.equals(CILINDRE_KEY)) {
-            ((ImageView) findViewById(R.id.imatge)).setImageResource(R.drawable.cilindre);
-            poliedreFunctions = new PrismaFunctions();
-        } else if (stringExtra.equals(CON_KEY)) {
-            ((ImageView) findViewById(R.id.imatge)).setImageResource(R.drawable.cono);
-            poliedreFunctions = new PiramideFunctions();
+        switch (getIntent().getStringExtra(POLIEDRE_KEY)) {
+            case PRISMA_KEY:
+                ((ImageView) findViewById(R.id.imatge)).setImageResource(R.drawable.prisma);
+                poliedreFunctions = new PrismaFunctions();
+                break;
+            case PIRAMIDE_KEY:
+                ((ImageView) findViewById(R.id.imatge)).setImageResource(R.drawable.piramide);
+                poliedreFunctions = new PiramideFunctions();
+                break;
+            case CILINDRE_KEY:
+                ((ImageView) findViewById(R.id.imatge)).setImageResource(R.drawable.cilindre);
+                poliedreFunctions = new CilindreFunctions();
+                break;
+            case CON_KEY:
+                ((ImageView) findViewById(R.id.imatge)).setImageResource(R.drawable.cono);
+                poliedreFunctions = new ConFunctions();
+                break;
+            case ESFERA_KEY:
+                ((ImageView) findViewById(R.id.imatge)).setImageResource(R.drawable.esfera);
+                poliedreFunctions = new EsferaFunctions();
+                break;
         }
     }
 
@@ -67,19 +79,25 @@ public class BaseActivity extends AppCompatActivity {
     }
 
     protected void calculate() {
-        if (hasMinimumSides()) {
+        if (!hasMinimumSides()) {
             showToast(getString(R.string.toast_minim_costats));
             return;
         }
 
-        if (areaChecked)
-            showToast(getString(R.string.area_toast, Float.toString(poliedreFunctions.area(altura, numCostats, longitudCostat))));
-        if (volumChecked)
-            showToast(getString(R.string.volum_toast, Float.toString(poliedreFunctions.volum(altura, numCostats, longitudCostat))));
+        if (areaChecked) showToast(getString(R.string.area_toast, Float.toString(getArea())));
+        if (volumChecked) showToast(getString(R.string.volum_toast, Float.toString(getVolum())));
+    }
+
+    protected float getArea() {
+        return poliedreFunctions.area(altura, numCostats, longitudCostat);
+    }
+
+    protected float getVolum() {
+        return poliedreFunctions.volum(altura, numCostats, longitudCostat);
     }
 
     protected boolean hasMinimumSides() {
-        return false;
+        return true;
     }
 
     void showToast(int text) {

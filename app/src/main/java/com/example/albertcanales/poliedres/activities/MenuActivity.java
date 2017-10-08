@@ -41,6 +41,7 @@ public class MenuActivity extends BaseActivity {
 
     public void esfera(View view) {
         Intent intent = new Intent(this, EsferaActivity.class);
+        intent.putExtra(POLIEDRE_KEY, ESFERA_KEY);
         startActivity(intent);
     }
 }

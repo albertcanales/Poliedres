@@ -1,14 +1,8 @@
 package com.example.albertcanales.poliedres.activities;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.ImageView;
 
-import com.example.albertcanales.poliedres.utils.PiramideFunctions;
-import com.example.albertcanales.poliedres.utils.PrismaFunctions;
-import com.example.albertcanales.poliedres.utils.PrismaPiramideFunctions;
 import com.example.albertcanales.poliedres.R;
 
 
@@ -46,7 +40,7 @@ public class PrismaPiramideActivity extends BaseActivity {
 
 
     protected boolean hasMinimumSides() {
-        return numCostats < 3;
+        return numCostats >= 3;
     }
 }
 

@@ -1,15 +1,9 @@
 package com.example.albertcanales.poliedres.activities;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.ImageView;
 
 import com.example.albertcanales.poliedres.R;
-import com.example.albertcanales.poliedres.utils.PiramideFunctions;
-import com.example.albertcanales.poliedres.utils.PrismaFunctions;
-import com.example.albertcanales.poliedres.utils.PrismaPiramideFunctions;
 
 public class CilindreConActivity extends BaseActivity {
 
@@ -36,6 +30,14 @@ public class CilindreConActivity extends BaseActivity {
             altura = Integer.parseInt(alturaString);
             radi = Integer.parseInt(radiString);
         }
+    }
+
+    protected float getArea() {
+        return poliedreFunctions.area(radi, altura);
+    }
+
+    protected float getVolum() {
+        return poliedreFunctions.volum(radi, altura);
     }
 
     protected boolean hasMinimumSides() {
