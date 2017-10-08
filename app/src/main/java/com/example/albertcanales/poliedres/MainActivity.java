@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         EditText password = (EditText) findViewById(R.id.password);
         String contrasenya = password.getText().toString();
         TextView error = (TextView) findViewById(R.id.error);
-        Intent intent = new Intent(this, Menu.class);
+        Intent intent = new Intent(this, MenuActivity.class);
         if (contrasenya.equals("a")) {
             error.setTextColor(Color.GREEN);
             error.setText("El usuari és correcte");

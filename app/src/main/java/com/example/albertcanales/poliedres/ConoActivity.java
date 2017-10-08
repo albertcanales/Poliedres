@@ -3,11 +3,11 @@ package com.example.albertcanales.poliedres;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-public class Esfera extends AppCompatActivity {
+public class ConoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_esfera);
+        setContentView(R.layout.activity_cono);
     }
 }

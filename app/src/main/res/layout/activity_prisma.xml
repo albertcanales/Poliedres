@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.albertcanales.poliedres.Prisma">
+    tools:context="com.example.albertcanales.poliedres.PrismaActivity">
 
     <EditText
         android:id="@+id/NumCostats"
@@ -170,7 +170,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:onClick="Calcular"
+        android:onClick="calcular"
         android:text="Calcula"
         android:textSize="18sp"
         android:textStyle="bold"

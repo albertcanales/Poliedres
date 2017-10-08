@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-public class Piramide extends AppCompatActivity {
+public class PiramideActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,7 +14,7 @@ public class Piramide extends AppCompatActivity {
     }
 
     public void piramide(View view) {
-        Intent intent = new Intent(this, Piramide.class);
+        Intent intent = new Intent(this, PiramideActivity.class);
         startActivity(intent);
     }
 }

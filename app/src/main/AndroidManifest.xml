@@ -17,14 +17,24 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Menu" />
         <activity
-            android:name=".Prisma"
+            android:name=".MenuActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".Piramide" />
-        <activity android:name=".Cilindre" />
-        <activity android:name=".Esfera" />
-        <activity android:name=".Cono">
+        <activity
+            android:name=".PrismaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PiramideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CilindreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EsferaActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ConoActivity"
+            android:screenOrientation="portrait" >
 
         </activity>
     </application>
