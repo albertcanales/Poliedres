@@ -23,14 +23,11 @@
             android:name=".activities.PrismaPiramideActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activities.CilindreActivity"
+            android:name=".activities.CilindreConActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".activities.EsferaActivity"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".activities.ConoActivity"
-            android:screenOrientation="portrait"></activity>
         <activity android:name=".activities.BaseActivity"></activity>
     </application>
 

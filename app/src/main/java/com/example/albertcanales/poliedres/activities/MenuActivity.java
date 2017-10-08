@@ -17,23 +17,25 @@ public class MenuActivity extends BaseActivity {
 
     public void prisma(View view) {
         Intent intent = new Intent(this, PrismaPiramideActivity.class);
-        intent.putExtra(PrismaPiramideActivity.PRISMA_PIRAMIDE_KEY, PrismaPiramideActivity.PRISMA_KEY);
+        intent.putExtra(POLIEDRE_KEY, PRISMA_KEY);
         startActivity(intent);
     }
 
     public void piramide(View view) {
         Intent intent = new Intent(this, PrismaPiramideActivity.class);
-        intent.putExtra(PrismaPiramideActivity.PRISMA_PIRAMIDE_KEY, PrismaPiramideActivity.PIRAMIDE_KEY);
+        intent.putExtra(POLIEDRE_KEY, PIRAMIDE_KEY);
         startActivity(intent);
     }
 
     public void cilindre(View view) {
-        Intent intent = new Intent(this, CilindreActivity.class);
+        Intent intent = new Intent(this, CilindreConActivity.class);
+        intent.putExtra(POLIEDRE_KEY, CILINDRE_KEY);
         startActivity(intent);
     }
 
     public void cono(View view) {
-        Intent intent = new Intent(this, ConoActivity.class);
+        Intent intent = new Intent(this, CilindreConActivity.class);
+        intent.putExtra(POLIEDRE_KEY, CON_KEY);
         startActivity(intent);
     }
 

@@ -15,4 +15,5 @@
     <string name="area_toast">Area = %s</string>
     <string name="volum_toast">Volum = %s</string>
     <string name="toast_minim_costats">Mínim 3 costats!</string>
+    <string name="error_radi">Falta el radi</string>
 </resources>

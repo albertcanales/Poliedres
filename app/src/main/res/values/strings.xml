@@ -18,4 +18,5 @@
     <string name="error_longitud_costats">Falta la longitud del costat</string>
     <string name="error_num_costats">Falta el numero de costats</string>
     <string name="error_altura">Falta l\'altura</string>
+    <string name="error_radi">Falta el radi</string>
 </resources>
