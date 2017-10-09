@@ -10,11 +10,11 @@ public class CilindreFunctions extends PoliedresFunctions {
     }
 
     public float area(float radi, float altura) {
-        return 0;
+        return areaBase(radi) * 2 + areaLateral(radi, altura);
     }
 
     public float volum(float radi, float altura) {
-        return 0;
+        return areaBase(radi) * altura;
     }
 
     protected float areaBase(float radi) {
@@ -22,6 +22,6 @@ public class CilindreFunctions extends PoliedresFunctions {
     }
 
     protected float areaLateral(float radi, float altura) {
-        return 0;
+        return (float) (2 * Math.PI * radi * altura);
     }
 }

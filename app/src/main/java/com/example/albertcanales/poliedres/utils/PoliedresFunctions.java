@@ -41,11 +41,13 @@ public abstract class PoliedresFunctions {
     }
 
 
-    protected float areaLateral(float altura, float altura2) {
+    protected float areaLateral(float altura, float radi) {
         return 0;
     }
 
     protected float areaLateral(float altura, int numCostats, float longitudCostat) {
         return 0;
     }
+
+    protected float generatriu(float radi, float altura){return 0;}
 }
