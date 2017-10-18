@@ -12,8 +12,6 @@
     <string name="esfera">Esfera</string>
     <string name="res_seleccionat">No has seleccionat res!</string>
     <string name="longitud_de_la_base">Longitud de la base</string>
-    <string name="area_toast">Area = %s</string>
-    <string name="volum_toast">Volum = %s</string>
     <string name="toast_minim_costats">Mínim 3 costats!</string>
     <string name="error_radi">Falta el radi</string>
 </resources>

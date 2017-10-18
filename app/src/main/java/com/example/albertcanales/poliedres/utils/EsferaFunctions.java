@@ -14,7 +14,7 @@ public class EsferaFunctions extends PoliedresFunctions {
     }
 
     public float volum(float radi) {
-        return (float) (4 * Math.PI * radi * radi *radi) / 3;
+        return (float) (4 * Math.PI * radi * radi * radi) / 3;
     }
 
     protected float areaBase(float radi) {

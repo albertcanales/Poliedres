@@ -1,5 +1,7 @@
 package com.example.albertcanales.poliedres.activities;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -79,13 +81,21 @@ public class BaseActivity extends AppCompatActivity {
     }
 
     protected void calculate() {
+        String resultText = "";
+
         if (!hasMinimumSides()) {
             showToast(getString(R.string.toast_minim_costats));
             return;
         }
 
-        if (areaChecked) showToast(getString(R.string.area_toast, Float.toString(getArea())));
-        if (volumChecked) showToast(getString(R.string.volum_toast, Float.toString(getVolum())));
+        if (areaChecked) {
+            resultText += String.format((getString(com.example.albertcanales.poliedres.R.string.area) + " = %s\n"), getArea());
+        }
+        if (volumChecked) {
+            resultText += String.format((getString(R.string.volum) + " = %s\n"), getVolum());
+        }
+
+        if (areaChecked || volumChecked) showDialog(getString(R.string.results), resultText.trim());
     }
 
     protected float getArea() {
@@ -106,5 +116,24 @@ public class BaseActivity extends AppCompatActivity {
 
     void showToast(String text) {
         Toast.makeText(getApplicationContext(), text, Toast.LENGTH_SHORT).show();
+    }
+
+    void showDialog(String title, String message) {
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+        alertDialogBuilder.setTitle(title);
+        alertDialogBuilder
+                .setMessage(message)
+                .setCancelable(true)
+                .setPositiveButton(R.string.try_again, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                })
+                .setNegativeButton(R.string.back_menu, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        finish();
+                    }
+                });
+        alertDialogBuilder.create().show();
     }
 }

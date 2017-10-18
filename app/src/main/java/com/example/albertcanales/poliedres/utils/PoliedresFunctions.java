@@ -49,5 +49,7 @@ public abstract class PoliedresFunctions {
         return 0;
     }
 
-    protected float generatriu(float radi, float altura){return 0;}
+    protected float generatriu(float radi, float altura) {
+        return 0;
+    }
 }
