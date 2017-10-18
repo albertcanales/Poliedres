@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="benvingut">Benvingut al nou POLIEDRES</string>
+    <string name="boto1">Comença!</string>
+    <string name="password">Contrasenya</string>
+    <string name="user_pass">El usuari és correcte!</string>
+    <string name="user_deny">El usuari no és correcte</string>
+    <string name="prisma">Prisma</string>
+    <string name="piramide">Piràmide</string>
+    <string name="cilindre">Cilindre</string>
+    <string name="con">Con</string>
+    <string name="esfera">Esfera</string>
+    <string name="res_seleccionat">No has seleccionat res!</string>
+    <string name="longitud_de_la_base">Longitud de la base</string>
+    <string name="toast_minim_costats">Mínim 3 costats!</string>
+    <string name="error_longitud_costats">Falta la longitud del costat</string>
+    <string name="error_num_costats">Falta el nombre de costats</string>
+    <string name="error_altura">Falta l\'altura</string>
+    <string name="error_radi">Falta el radi</string>
+    <string name="try_again">Tornar a calcular</string>
+    <string name="back_menu">Torna al menú</string>
+    <string name="results">Resultats</string>
+    <string name="area">Àrea</string>
+    <string name="volum">Volum</string>
+</resources>

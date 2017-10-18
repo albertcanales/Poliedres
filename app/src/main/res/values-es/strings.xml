@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="benvingut">Benvingut al nou POLIEDRES</string>
-    <string name="boto1">Comença!</string>
-    <string name="password">Contrasenya</string>
-    <string name="user_pass">El usuari és correcte!</string>
-    <string name="user_deny">El usuari no és correcte</string>
+    <string name="benvingut">Bienvenido al nuevo POLIEDRES</string>
+    <string name="boto1">Empieza!</string>
+    <string name="password">Contraseña</string>
+    <string name="user_pass">El usuario es correcto</string>
+    <string name="user_deny">El usuari no es correcto</string>
     <string name="prisma">Prisma</string>
-    <string name="piramide">Piràmide</string>
-    <string name="cilindre">Cilindre</string>
-    <string name="con">Con</string>
+    <string name="piramide">Pirámide</string>
+    <string name="cilindre">Cilindro</string>
+    <string name="con">Cono</string>
     <string name="esfera">Esfera</string>
-    <string name="res_seleccionat">No has seleccionat res!</string>
+    <string name="res_seleccionat">No has seleccionado nada!</string>
     <string name="longitud_de_la_base">Longitud de la base</string>
-    <string name="toast_minim_costats">Mínim 3 costats!</string>
-    <string name="error_radi">Falta el radi</string>
+    <string name="toast_minim_costats">Mínimo 3 lados!</string>
+    <string name="error_radi">Falta el radio</string>
+    <string name="volum">Volumen</string>
+    <string name="try_again">Vuleve a calcular</string>
+    <string name="error_altura">Falta la altura</string>
+    <string name="error_longitud_costats">Falta la longitud del lado</string>
+    <string name="error_num_costats">Falta el numero de lados</string>
+    <string name="results">Resultados</string>
+    <string name="back_menu">Vuelve al menú</string>
+    <string name="area">Área</string>
 </resources>

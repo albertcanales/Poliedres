@@ -1,25 +1,25 @@
 <resources>
     <string name="app_name" translatable="false">Poliedres</string>
-    <string name="benvingut">Benvingut al nou POLIEDRES</string>
-    <string name="boto1">Comença!</string>
-    <string name="password">Contrasenya</string>
-    <string name="user_pass">El usuari és correcte!</string>
-    <string name="user_deny">El usuari no és correcte</string>
-    <string name="prisma">Prisma</string>
-    <string name="piramide">Piràmide</string>
-    <string name="cilindre">Cilindre</string>
-    <string name="con">Con</string>
-    <string name="esfera">Esfera</string>
-    <string name="res_seleccionat">No has seleccionat res!</string>
-    <string name="longitud_de_la_base">Longitud de la base</string>
-    <string name="toast_minim_costats">Mínim 3 costats!</string>
-    <string name="error_longitud_costats">Falta la longitud del costat</string>
-    <string name="error_num_costats">Falta el numero de costats</string>
-    <string name="error_altura">Falta l\'altura</string>
-    <string name="error_radi">Falta el radi</string>
-    <string name="try_again">Tornar a calcular</string>
-    <string name="back_menu">Torna al menu</string>
-    <string name="results">Resultats</string>
+    <string name="benvingut">Welcome to the new POLIEDRES al nou POLIEDRES</string>
+    <string name="boto1">Start!</string>
+    <string name="password">Password</string>
+    <string name="user_pass">User is correct!</string>
+    <string name="user_deny">User is not correct!</string>
+    <string name="prisma">Prism</string>
+    <string name="piramide">Pyramid</string>
+    <string name="cilindre">Cylinder</string>
+    <string name="con">Cone</string>
+    <string name="esfera">Sphere</string>
+    <string name="res_seleccionat">You haven\'t selected anything!</string>
+    <string name="longitud_de_la_base">Base\'s longitude</string>
+    <string name="toast_minim_costats">Minimum 3 sides!</string>
+    <string name="error_longitud_costats">Sides\' logitude is missing</string>
+    <string name="error_num_costats">Number of sides is missing</string>
+    <string name="error_altura">Height is missing</string>
+    <string name="error_radi">Radius is missing</string>
+    <string name="try_again">Calculate again</string>
+    <string name="back_menu">Back to menu</string>
+    <string name="results">Results</string>
     <string name="area">Area</string>
-    <string name="volum">Volum</string>
+    <string name="volum">Volume</string>
 </resources>
